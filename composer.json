@@ -1,0 +1,35 @@
+{
+    "name": "rooxie/omdb-laravel",
+    "type": "library",
+    "description": "A Laravel integration for OMDb API",
+    "keywords": ["laravel", "imdb", "omdb", "api", "movies", "films", "series", "episodes", "ratings"],
+    "homepage": "https://github.com/rooxie/omdb-laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Roman Derlemenko",
+            "email": "romanderlemenko@gmail.com",
+            "homepage": "https://github.com/rooxie"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "illuminate/support": "^6|^7|^8|^9",
+        "rooxie/omdb": "^0.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rooxie\\Laravel\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rooxie\\Laravel\\ServiceProvider"
+            ],
+            "aliases": {
+                "OMDb": "Rooxie\\Laravel\\Facades\\OMDb"
+            }
+        }
+    }
+}

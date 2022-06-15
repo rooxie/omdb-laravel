@@ -1,6 +1,9 @@
 # PhpStorm project settings folder
 .idea
 
+# macOS folder attributes file
+.DS_Store
+
 # Composer autoload and dependencies
 /vendor
 
